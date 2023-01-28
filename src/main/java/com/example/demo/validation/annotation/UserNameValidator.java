@@ -11,7 +11,7 @@ public class UserNameValidator implements ConstraintValidator<UserName, String> 
 
         if (userName == null) {
             /**
-             * Null check validation is handled through default NotNull annotation so return to skip this validation
+             * Null check validation is handled through default @NotNull annotation so return true to skip this validation
              */
             return true;
         }
