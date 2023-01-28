@@ -24,10 +24,10 @@ public class DemoApplication implements CommandLineRunner {
     @Override
     public void run(String... args) {
         User user = new User();
-        user.setName("sks");
+        user.setName("shubham");
         user.setWorking(true);
         user.setAge(22);
-        user.setAboutMe("Its all about me");
+        user.setAboutMe("This is shubham");
 
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         Validator validator = factory.getValidator();

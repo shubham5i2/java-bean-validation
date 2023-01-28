@@ -9,6 +9,9 @@ public class UserNameValidator implements ConstraintValidator<UserName, String> 
     public boolean isValid(String userName, ConstraintValidatorContext context) {
         boolean isValidUsername = true;
 
+        if (userName == null) {
+            return true;
+        }
         if (userName.length() < 5) {
             isValidUsername = false;
             context.buildConstraintViolationWithTemplate("{username.size.invalid}")
