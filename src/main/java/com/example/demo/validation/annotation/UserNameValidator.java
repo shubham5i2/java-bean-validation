@@ -16,7 +16,8 @@ public class UserNameValidator implements ConstraintValidator<UserName, String> 
             isValidUsername = false;
             context.buildConstraintViolationWithTemplate("{username.size.invalid}")
                     .addPropertyNode("name")
-                    .addConstraintViolation();
+                    .addConstraintViolation()
+                    .disableDefaultConstraintViolation();
         }
 
         return isValidUsername;

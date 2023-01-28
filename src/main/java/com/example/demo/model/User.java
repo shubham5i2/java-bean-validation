@@ -8,7 +8,7 @@ import lombok.Data;
 public class User {
 
     @NotNull(message = "Name cannot be null")
-    @UserName(message = "Name cannot be less than 5 characters")
+    @UserName
     private String name;
 
     private boolean working;

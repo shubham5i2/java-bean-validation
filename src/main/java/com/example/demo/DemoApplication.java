@@ -24,7 +24,7 @@ public class DemoApplication implements CommandLineRunner {
     @Override
     public void run(String... args) {
         User user = new User();
-        user.setName("shubham");
+        user.setName("sks");
         user.setWorking(true);
         user.setAge(22);
         user.setAboutMe("This is shubham");
