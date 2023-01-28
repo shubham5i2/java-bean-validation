@@ -10,6 +10,9 @@ public class UserNameValidator implements ConstraintValidator<UserName, String> 
         boolean isValidUsername = true;
 
         if (userName == null) {
+            /**
+             * Null check validation is handled through default NotNull annotation so return to skip this validation
+             */
             return true;
         }
         if (userName.length() < 5) {
